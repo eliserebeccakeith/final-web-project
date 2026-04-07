@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ellie Keith | From-Scratch Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="top-banner" id="top">
+    <h1>My From-Scratch Page</h1>
+    <p>Travel, experiences, and things I enjoy learning about</p>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav-box">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Résumé</a>
+    <a href="app.html">Web App</a>
+    <a href="#tableau-section">Jump to Tableau</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content-wrapper">
+
+    <!-- INTRO -->
+    <div class="info-box">
+      <h2>Why I Love Traveling</h2>
+      <p>
+        Traveling allows me to experience new cultures, meet different people,
+        and grow in ways that are not possible in everyday life. It helps me
+        build confidence, independence, and appreciation for the world.
+      </p>
+
+      <a class="anchor-link" href="#video-section">
+        Jump to my travel video ↓
+      </a>
+    </div>
+
+    <!-- NESTED LIST -->
+    <div class="info-box">
+      <h2>My Travel Interests</h2>
+
+      <ol>
+        <li>Places I have visited
+          <ul>
+            <li>China</li>
+            <li>Various U.S. states</li>
+          </ul>
+        </li>
+
+        <li>Places I want to visit
+          <ul>
+            <li>Italy</li>
+            <li>Japan</li>
+            <li>Greece</li>
+          </ul>
+        </li>
+
+        <li>Things I enjoy while traveling
+          <ul>
+            <li>Trying new food</li>
+            <li>Exploring cities</li>
+            <li>Taking pictures</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- IMAGE SECTION (YOUR PHOTO) -->
+    <div class="info-box">
+      <h2>My Travel Experience</h2>
+      <p>
+        This photo was taken during my trip to China. Traveling internationally
+        was an incredible experience that helped me learn about culture,
+        communication, and adaptability.
+      </p>
+
+      <div class="image-box">
+        <img src="images/EllieInChina.jpeg" alt="Ellie in China" style="max-width: 500px;">
+      </div>
+    </div>
+
+    <!-- YOUTUBE VIDEO -->
+    <div class="info-box" id="video-section">
+      <h2>Travel Inspiration Video</h2>
+      <p>Here is a video that captures the excitement of traveling:</p>
+
+      <div class="video-box">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/Scxs7L0vhZ4"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- TABLEAU -->
+    <div class="info-box" id="tableau-section">
+      <h2>Interactive Data Visualization</h2>
+      <p>
+        This is a live Tableau visualization showing real data.
+      </p>
+
+      <div class="tableau-box">
+        <div class='tableauPlaceholder' id='viz1680000000000'>
+          <noscript>
+            <img src='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Stocks/1.png'>
+          </noscript>
+
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https://public.tableau.com/' />
+            <param name='name' value='RegionalSampleWorkbook/Stocks' />
+            <param name='toolbar' value='yes' />
+          </object>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="info-box">
+      <h2>Navigation</h2>
+
+      <ul>
+        <li><a href="index.html">Go to Home Page</a></li>
+        <li><a href="resume.html">Go to Résumé</a></li>
+        <li><a href="app.html">Go to Web App</a></li>
+        <li><a href="#top">Back to Top</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-box">
+    <p>Built from scratch using HTML and CSS</p>
+  </div>
+
+  <!-- TABLEAU SCRIPT -->
+  <script>
+    var divElement = document.getElementById('viz1680000000000');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = "100%";
+    vizElement.style.height = "600px";
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+</body>
+</html>

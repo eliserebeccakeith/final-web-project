@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-banner">
+    <h1>Guess the Number</h1>
+    <p>An interactive web app created with AI collaboration</p>
+  </div>
+
+  <div class="nav-box">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Résumé</a>
+    <a href="scratch.html">From-Scratch Page</a>
+  </div>
+
+  <div class="app-container">
+    <h2>How to Play</h2>
+    <p>I am thinking of a number between <span class="highlight">1 and 100</span>.</p>
+    <p>Type a guess and click Submit Guess.</p>
+
+    <input type="number" id="guessInput" placeholder="Enter your guess">
+    <br>
+    <button type="button" onclick="checkGuess()">Submit Guess</button>
+    <button type="button" onclick="restartGame()">Restart Game</button>
+
+    <p id="message"></p>
+    <p id="attempts">Attempts: 0</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
